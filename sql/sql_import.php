@@ -1,8 +1,8 @@
 <?php
 //connection variables
 $host = 'localhost';
-$user = 'vib';
-$password = 'deadlysql123';
+$user = 'admin';
+$password = 'admin';
 //create mysql connection
 $mysqli = new mysqli($host,$user,$password);
 if ($mysqli->connect_errno) {
