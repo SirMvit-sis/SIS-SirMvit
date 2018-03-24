@@ -11,26 +11,28 @@
 	    $branch = trim(addslashes($_POST["your_email"]));
 		  $ik=(integer)$_SESSION['id'];
 			echo "$usn  $branch  $ik";
-			//$result1 = $mysqli->query("SELECT * FROM users WHERE email='$email'") or die($mysqli->error());
 			$mysqli->query("UPDATE users SET usn='$usn', branch='$branch' WHERE id=$ik");
 			echo "done";
 			header('location: dashboard.php');
 		}
 
 ?>
-<?php
-		include("header.php");
-?>
+
 <style>
 			.rows{ width:100%; height:auto; overflow:hidden; margin-bottom:10px; }
 			.label{ width:100px;color:#000; float:left;padding-top:5px;}
 			.input-row{ width:280px; height:32px; background-color:#FFF; float:left; position:relative; }
 			.input-textarea-row{ width:280px; height:65px; background-color:#FFF; float:left; position:relative; }
-			.textbox{ width:100%; height:24px;  border:1px solid #007294;outline:none; background:transparent; color:#000; padding:0px;  }
+			.textbox{ width:100%; height:32px;  border:1px solid #007294;outline:none; background:transparent; color:#000; padding:0px;  }
 			.textarea{ width:100%; height:57px;  border:1px solid #007294; outline:none; background:transparent; color:#000; padding:0px;  }
 			.submit_button{background:#118eb1;padding:2px;border:none;cursor:pointer;}
 			.success{padding-bottom:30px; color:#009900;}
 			.error{padding-bottom:30px; color:#F00;}
+			body
+			{
+				background: #9da3ad;
+			}
+
 </style>
 
 
@@ -76,8 +78,7 @@
 			<div class="8u">
 
 				<section class="left-content">
-		      <h2><?php echo stripslashes($pageDetails["page_title"]); ?></h2>
-		          	<?php echo stripslashes($pageDetails["page_desc"]); ?>
+
 
 					<div style="height:30px;clear:both"></div>
 		      <?php if ($_GET["msg"] == "success") { ?>

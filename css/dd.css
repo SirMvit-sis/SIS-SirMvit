@@ -7,7 +7,7 @@
   margin-left: -250px;
   left: 250px;
   width: 250px;
-  background: #000;
+  background: #13232F;
   position: fixed;
   height: 100%;
   overflow-y: auto;
@@ -44,7 +44,7 @@
 }
 
 .sidebar-nav li a {
-  color: #999999;
+  color: #99999;
   display: block;
   text-decoration: none;
   padding-left: 60px;
@@ -78,7 +78,7 @@
 }
 
 .sidebar-nav > .sidebar-brand a {
-  color: #999999;
+  color: #99999;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
@@ -106,7 +106,7 @@
 
 .btn-menu {
   color: #000;
-} 
+}
 
 .inset {
   padding: 20px;
@@ -142,4 +142,3 @@
 }
 
 }
-

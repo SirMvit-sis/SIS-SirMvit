@@ -7,7 +7,11 @@ session_start();
 <html>
 <head>
   <title>Sign-Up/Login Form</title>
-  <?php include 'css/css.html'; ?>
+   <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <?php
@@ -27,6 +31,33 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 }
 ?>
 <body>
+      <div class="topnav">
+
+        <p>Sir MVIT SIS system</p>
+
+
+      </div>
+  <style>
+          body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+
+          .topnav {
+            overflow: hidden;
+            background-color:  #101921;
+            height: 100px;
+
+          }
+          .topnav p
+          {
+            font-size: 50px;
+            padding-right: 10px;
+            color: #ffffff;
+            text-align: center;
+          }
+  </style>
+
   <div class="form">
 
       <ul class="tab-group">
